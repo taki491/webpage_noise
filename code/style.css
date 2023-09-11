@@ -1,0 +1,412 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Baloo Bhai 2", cursive;
+  font-family: "Inter", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Secular One", sans-serif;
+  font-family: "Ubuntu", sans-serif;
+}
+
+/* <---------  main container  ---------> */
+
+.main-container {
+  width: 100%;
+  height: 100%;
+}
+
+/* <---------  main top  ---------> */
+.main-top {
+  width: 100%;
+  height: 60%;
+  background-image: url("../media/home.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+/* <---------  header  ---------> */
+
+.main-top header {
+  height: 90px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0px 30px;
+  align-items: center;
+}
+
+/* <---------  header left  ---------> */
+
+.header-left i {
+  font-size: 2vw;
+  color: white;
+  cursor: pointer;
+}
+/* <---------  header right  ---------> */
+.header-right {
+  display: flex;
+  flex-direction: row;
+  width: 8%;
+  justify-content: space-between;
+}
+
+.header-right i {
+  font-size: 2vw;
+  color: white;
+  cursor: pointer;
+}
+
+/* <---------  top main  ---------> */
+main {
+  height: calc(100% - 90px);
+  width: 100%;
+  padding: 0px 30px;
+}
+
+.content {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content h1 {
+  font-size: 5vw;
+  color: white;
+  font-weight: 900;
+}
+
+.content-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  flex-direction: row;
+  width: 60%;
+}
+
+.content-right p {
+  font-size: 1.3vw;
+  color: white;
+
+  width: 32%;
+  font-weight: 600;
+}
+
+.icons {
+  display: flex;
+}
+
+.icons i {
+  margin: 0px 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 2vw;
+}
+
+i:hover {
+  cursor: pointer;
+  color: black;
+}
+
+/* <---------  main bottom  ---------> */
+
+.main-bottom {
+  height: 40%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.bottom-1 {
+  height: 100%;
+  width: 25%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px 10px;
+  transition: all linear 0.15s;
+  background-color: white;
+}
+
+.bottom-1 h4 {
+  font-size: 2vw;
+}
+
+.bottom-1 p {
+  font-size: 1.5vw;
+}
+
+.bottom-down i {
+  font-size: 2vw;
+}
+
+.bottom-down i:hover {
+  cursor: pointer;
+  color: grey;
+}
+.bottom-2 {
+  height: 100%;
+  width: 25%;
+
+  background-image: url("../media/man-rain-coat.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.bottom-3 {
+  height: 100%;
+  width: 20%;
+}
+
+.bottom-3-up {
+  width: 100%;
+  height: 50%;
+  background-color: #e3b256;
+  padding: 10px;
+  color: black;
+  display: flex;
+  flex: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom-3-up p {
+  font-size: 1.2vw;
+  font-weight: 600;
+}
+.bottom-3-up p span {
+  display: inline-block;
+  color: black;
+}
+
+.bottom-3-down {
+  width: 100%;
+  height: 50%;
+  background-image: url("../media/flowers.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.bottom-4 {
+  height: 100%;
+  width: 30%;
+
+  background-image: url("../media/man-back.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+/* <---------  Media queries for smartphone  ---------> */
+
+@media (min-width: 0px) and (max-width: 500px) {
+  .main-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* <---------  main top  ---------> */
+  .main-top {
+    width: 100%;
+    height: 45%;
+    background-image: url("../media/home.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+
+  /* <---------  header  ---------> */
+
+  .main-top header {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 3vw;
+    align-items: center;
+  }
+
+  /* <---------  header left  ---------> */
+
+  .header-left i {
+    font-size: 3vw;
+    color: white;
+    cursor: pointer;
+  }
+  /* <---------  header right  ---------> */
+  .header-right {
+    display: flex;
+    flex-direction: row;
+    width: 14vw;
+    justify-content: space-between;
+  }
+
+  .header-right i {
+    font-size: 3vw;
+    color: white;
+    cursor: auto;
+  }
+
+  /* <---------  top main  ---------> */
+  main {
+    height: calc(100% - 50px);
+    width: 100%;
+    padding: 0px 0vw;
+  }
+
+  .content {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .content-left {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content h1 {
+    font-size: 9vw;
+    color: white;
+    font-weight: 900;
+  }
+
+
+  .content-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+    width: 100%;
+    height: 60%;
+  }
+
+  .content-right p {
+    font-size: 2.8vw;
+    color: white;
+
+    width: 30%;
+
+    font-weight: 600;
+  }
+
+  .icons {
+    display: flex;
+    flex-direction: row;
+
+    height: 25%;
+    flex-wrap: wrap;
+    width: 16%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .icons i {
+    margin: 0px 2%;
+    color: white;
+    cursor: pointer;
+    font-size: 3.5vw;
+  }
+
+  i:hover {
+    cursor: auto;
+    color: white;
+  }
+
+  /* <---------  main bottom  ---------> */
+
+  .main-bottom {
+    height: 55%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bottom-1 {
+    height: 20%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10px;
+    transition: none;
+    background-color: white;
+  }
+
+  .bottom-1 h4 {
+    font-size: 4vw;
+  }
+
+  .bottom-1 p {
+    font-size: 3vw;
+  }
+
+  .bottom-down i {
+    font-size: 2vw;
+  }
+
+  .bottom-down i:hover {
+    cursor: auto;
+    color: black;
+  }
+  .bottom-2 {
+    height: 30%;
+    width: 100%;
+
+    background-image: url("../media/man-rain-coat.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+  .bottom-3 {
+    height: 20%;
+    width: 100%;
+  }
+
+  .bottom-3-up {
+    width: 100%;
+    height: 100%;
+    background-color: #e3b256;
+    padding: 2px;
+  }
+
+  .bottom-3-up p {
+    font-size: 2.6vw;
+    font-weight: 700;
+    color: black;
+  }
+  .bottom-3-up p span {
+    display: inline-block;
+    font-weight: 600;
+    color: white;
+  }
+
+  .bottom-3-down {
+    display: none;
+  }
+
+  .bottom-4 {
+    height: 30%;
+    width: 100%;
+    background-image: url("../media/man-back.jpg");
+    background-position: left center;
+    background-size: cover;
+  }
+}
